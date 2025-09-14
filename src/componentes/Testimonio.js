@@ -1,17 +1,17 @@
 import React from "react";
 import '../styles/Testimonios.css'
 
-function Testimonio(){
+function Testimonio(props){
   return(
     <div className="contenedor-testimonio">
       <img
         className="imagen-testimonio"
-        src={require("../images/Linus.jpg")}
+        src={require(`../images/${props.imagen}`)}
         alt="Foto1" />
         <div className="contenedor-texto-textimonio">
-          <p className="nombre">Linus Torvalds</p>
-          <p className="cargo">Creador del kernel de Linux</p>
-          <p className="testimonio">La mayoría de los buenos programadores programan no porque esperan que les paguen o que el público los adore, sino porque programar es divertido. </p>
+          <p className="nombre"> <strong> {props.nombre} </strong></p>
+          <p className="cargo">{props.cargo}</p>
+          <p className="testimonio">{props.testimonio} </p>
         </div>
     </div>
   );

@@ -11,7 +11,8 @@
 
 .imagen-testimonio{
   height: 100%;
-  width: auto;
+  width: 250px;
+  object-fit: cover;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
